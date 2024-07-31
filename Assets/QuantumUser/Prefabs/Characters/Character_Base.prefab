@@ -193,14 +193,14 @@ MonoBehaviour:
       Id:
         Value: 0
     SourceCollider: {fileID: 0}
-    IsEnabled: 0
+    IsEnabled: 1
     Shape2D:
-      ShapeType: 0
+      ShapeType: 1
       PolygonCollider:
         Id:
           Value: 0
       CircleRadius:
-        RawValue: 0
+        RawValue: 65536
       CapsuleSize:
         X:
           RawValue: 0
@@ -260,8 +260,8 @@ MonoBehaviour:
     CallbackFlags:
       Value: 0
   PhysicsBody:
-    IsEnabled: 0
-    Config2D: 116
+    IsEnabled: 1
+    Config2D: 1
     Config3D: 58
     RotationFreeze: 0
     Mass:
