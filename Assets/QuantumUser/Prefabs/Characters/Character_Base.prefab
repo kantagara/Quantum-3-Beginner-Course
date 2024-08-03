@@ -258,7 +258,7 @@ MonoBehaviour:
     LayerSource: 0
     Layer: 6
     CallbackFlags:
-      Value: 0
+      Value: 4095
   PhysicsBody:
     IsEnabled: 1
     Config2D: 1
@@ -403,6 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 534198499139429989}
+  overheadUi: {fileID: 1892350581194458970}
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0
