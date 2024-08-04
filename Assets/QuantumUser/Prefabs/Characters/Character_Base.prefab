@@ -142,9 +142,10 @@ GameObject:
   - component: {fileID: 3014794430628324286}
   - component: {fileID: 757676207454511083}
   - component: {fileID: 6058813873119106819}
-  - component: {fileID: 8897561840509087162}
   - component: {fileID: 4000438288789523984}
   - component: {fileID: 8715428840369094540}
+  - component: {fileID: 296922799673535213}
+  - component: {fileID: 7613737136724776447}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -334,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0008c51fe3af00b4da5d44f02d9b3dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BindBehaviour: 0
+  BindBehaviour: 1
   ManualDisposal: 0
   ViewFlags: 0
   InterpolationMode: 0
@@ -353,31 +354,6 @@ MonoBehaviour:
   OnEntityDestroyed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8897561840509087162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326267824891306075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5fb4134ca4ee864788816b4128443b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prototype:
-    Settings:
-      Id:
-        Value: 316719393997610777
-    MaxSpeed:
-      RawValue: 0
-    Acceleration:
-      RawValue: 0
-    Velocity:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
 --- !u!114 &4000438288789523984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +380,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 534198499139429989}
   overheadUi: {fileID: 1892350581194458970}
+--- !u!114 &296922799673535213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fb4134ca4ee864788816b4128443b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Settings:
+      Id:
+        Value: 316719393997610777
+    MaxSpeed:
+      RawValue: 0
+    Acceleration:
+      RawValue: 0
+    Velocity:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+--- !u!114 &7613737136724776447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b92818ab9e04d4188b02f4e4f9f5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    CooldownTime:
+      RawValue: 0
+    WeaponData:
+      Id:
+        Value: 370859891313704525
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0
