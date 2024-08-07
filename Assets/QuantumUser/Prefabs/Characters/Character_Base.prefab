@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 8715428840369094540}
   - component: {fileID: 296922799673535213}
   - component: {fileID: 7613737136724776447}
+  - component: {fileID: 2219076549632144039}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -423,6 +424,24 @@ MonoBehaviour:
     WeaponData:
       Id:
         Value: 370859891313704525
+--- !u!114 &2219076549632144039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69712e1d237181e4a9f596c588646da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Health:
+      RawValue: 0
+    DamageableData:
+      Id:
+        Value: 285363075442059050
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0
