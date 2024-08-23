@@ -10,17 +10,15 @@ namespace Quantum {
    
     public void OnAdded(Frame f, EntityRef entity, Damageable* component)
     {
-      var damageableData = f.FindAsset(component->DamageableData);
+      var damageableData = f.FindAsset<DamageableBase>(component->DamageableData);
       component->Health = damageableData.MaxHealth;
     }
 
-    public void DamageableHit(Frame f, EntityRef damageableEntity, FP damage, Damageable* damageable)
+
+    public void DamageableHit(Frame f, EntityRef source, EntityRef victim, FP damage)
     {
-      damageable->Health -= damage;
-      if (damageable->Health < 0)
-      {
-        f.Destroy(damageableEntity);
-      }
+      var damageableData = f.FindAsset<DamageableBase>(f.Get<Damageable>(victim).DamageableData);
+      damageableData.TakeDamage(f, source, victim, damage);
     }
   }
 }

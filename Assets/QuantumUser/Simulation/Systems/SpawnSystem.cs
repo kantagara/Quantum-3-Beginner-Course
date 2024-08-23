@@ -10,6 +10,7 @@ namespace Quantum
         public void OnPlayerAdded(Frame f, PlayerRef player, bool firstTime)
         {
             if (!firstTime) return;
+            Log.Info("WTF");
             var playerEntityRef = CreatePlayer(f, player);
             PlacePlayerOnSpawnPosition(f, playerEntityRef);
         }
