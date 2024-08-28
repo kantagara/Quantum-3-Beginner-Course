@@ -14,13 +14,11 @@ namespace Quantum {
       component->Health = damageableData.MaxHealth;
     }
 
-    public void DamageableHit(Frame f, EntityRef damageableEntity, FP damage, Damageable* damageable)
+
+    public void DamageableHit(Frame f, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable)
     {
-      damageable->Health -= damage;
-      if (damageable->Health < 0)
-      {
-        f.Destroy(damageableEntity);
-      }
+      var damageableBase = f.FindAsset<DamageableBase>(damageable->DamageableData);
+      damageableBase.DamageableHit(f, victim, hitter, damage, damageable);
     }
   }
 }
