@@ -7971,7 +7971,7 @@ MonoBehaviour:
   - PlayerAvatar:
       Id:
         Value: 1482840388342383833
-    PlayerNickname: 
+    PlayerNickname: Nikola
   MaxPlayerCount: 5
   SimulationSpeedMultiplier: 1
   DisplaySaveAndReloadButton: 0

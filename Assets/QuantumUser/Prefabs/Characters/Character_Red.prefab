@@ -3284,6 +3284,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8715428840369094540, guid: 087898557506e714b83fb874784c9772,
+        type: 3}
+      propertyPath: animationSpeedMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8760937464253763487, guid: 087898557506e714b83fb874784c9772,
         type: 3}
       propertyPath: m_RootBone
