@@ -2698,6 +2698,8 @@ MonoBehaviour:
     - rid: 3397088566554132481
     - rid: 3397088566554132482
     - rid: 3397088566554132483
+  - Components:
+    - rid: 8696631612676243456
   SerializedTriangleDataUncompressedSize: 452
   references:
     version: 2
@@ -3073,3 +3075,13 @@ MonoBehaviour:
       data:
         AvailableSpawnPoints: []
         UsedSpawnPoints: []
+    - rid: 8696631612676243456
+      type: {class: GameManagerPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        CurrentGameState:
+          Value: 0
+        TimeToWaitForPlayers:
+          RawValue: 0
+        GameManagerConfig:
+          Id:
+            Value: 466011569540118732
